@@ -1,0 +1,233 @@
+.contactSection {
+    padding: 100px 0;
+    /* Увеличили отступ сверху и снизу, чтобы добавить воздуха */
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    /* Центрируем заголовки и форму по центру экрана */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2c3528;
+    letter-spacing: 0.05em;
+    /* Сделали буквы в заголовке чуть шире и благороднее */
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #55604e;
+    margin-bottom: 60px;
+    /* Увеличили расстояние от подзаголовка до формы */
+    line-height: 1.5;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 700px;
+    /* Сузили саму форму с 900px до 700px, чтобы она стала компактной и не растягивалась */
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    /* Еще немного увеличили расстояние между горизонтальными рядами полей */
+}
+
+/* Двухколоночный ряд (например, Имя и Компания, или Email и Телефон) */
+.row {
+    display: flex;
+    gap: 50px;
+    /* УВЕЛИЧИЛИ РАССТОЯНИЕ между левым и правым полем (было 40px) */
+    width: 100%;
+}
+
+.formGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* УВЕЛИЧИЛИ расстояние между названием (Label) и самим полем ввода */
+}
+
+.formGroupFull {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* УВЕЛИЧИЛИ расстояние перед большим текстовым полем */
+    width: 100%;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 700;
+    /* Сделали названия полей более четкими */
+    color: #2c3528;
+    letter-spacing: 0.03em;
+    /* Легкая разрядка букв для стиля */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 16px 20px;
+    /* Увеличили внутренние отступы, инпуты станут более объемными и дорогими */
+    border: 1px solid #d1ded0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    /* Применили шрифт Montserrat внутрь полей! */
+    color: #2c3528;
+    background-color: #fcfdfb;
+    transition: all 0.3s ease;
+}
+
+/* Фисташковая подсветка при клике */
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: #7a9a60;
+    box-shadow: 0 0 0 4px rgba(122, 154, 96, 0.15);
+    background-color: #ffffff;
+}
+
+.textarea {
+    resize: vertical;
+}
+
+/* Кнопка отправки "Absenden" */
+.submitBtn {
+    align-self: center;
+    /* ОТЦЕНТРИРОВАЛИ КНОПКУ строго по центру формы! */
+    background-color: #7a9a60;
+    color: #ffffff;
+    border: none;
+    padding: 16px 60px;
+    /* Сделали кнопку более широкой и солидной */
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(122, 154, 96, 0.2);
+}
+
+.submitBtn:hover {
+    background-color: #63804d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(122, 154, 96, 0.3);
+}
+
+/* Стили для нижнего блока прямых контактов */
+.directContact {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.directTitle {
+    font-size: 26px;
+    font-weight: 800;
+    color: #2c3528;
+    letter-spacing: 0.05em;
+    margin-bottom: 60px;
+}
+
+.contactGrid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* Увеличили расстояние между карточками контактов */
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contactCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconWrapper {
+    width: 80px;
+    height: 80px;
+    background-color: #e8f0e3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: transform 0.3s ease;
+}
+
+.contactCard:hover .iconWrapper {
+    transform: scale(1.1);
+}
+
+.reactIcon {
+    font-size: 42px;
+}
+
+.cardTitle {
+    font-size: 16px;
+    font-weight: 800;
+    color: #2c3528;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+}
+
+.link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3528;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #7a9a60;
+}
+
+.time {
+    font-size: 14px;
+    color: #55604e;
+    line-height: 1.6;
+}
+
+/* Адаптивность для мобилок */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contactGrid {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .submitBtn {
+        width: 100%;
+        text-align: center;
+    }
+}
